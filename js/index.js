@@ -65,6 +65,8 @@ textContentClass.forEach(paragraph => {
 textContentClass.forEach(paragraph => {
   paragraph.addEventListener('mouseout', () => {
     paragraph.style.fontFamily = 'monospace';
+    paragraph.style.color = 'orange';
+    paragraph.style.fontSize = '15px';
   });
 });
 
@@ -83,8 +85,8 @@ destinationClass.forEach(card => {
 
 // 9 //
 // mouseover
-const btmButton = document.querySelectorAll('.btn');
-btmButton.forEach(card => {
+const btnButton = document.querySelectorAll('.btn');
+btnButton.forEach(card => {
   card.addEventListener('mouseover', event => {
     card.style.backgroundColor = 'purple';
     card.style.color = 'white';
@@ -114,13 +116,14 @@ navItems.forEach(aTag => {
 });
 
 // event.stopPropagation()
-paragraphs = document.querySelectorAll('p');
+paragraph = document.querySelectorAll('p');
+// this will alert you when the h2 is copied.
 intro = document.querySelector('.intro');
 intro.addEventListener('copy', function (event) {
   alert('This will copy the H2!');
 });
 // this will alert you when the paragraph is copied.
-paragraphs.forEach(node => {
+paragraph.forEach(node => {
   node.addEventListener('copy', function (event) {
     event.stopPropagation();
     alert('You have copied the paragraph!');
