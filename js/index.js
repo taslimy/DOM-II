@@ -1,7 +1,6 @@
 // Your code goes here
 
 // 1 //
-
 // Select Dom Element
 const header = document.querySelector('header');
 // Create Event Listener
@@ -29,7 +28,6 @@ window.addEventListener('keydown', event => {
 });
 
 // 4 //
-
 //  dblClick
 const imgClick = document.querySelector('img');
 console.log(imgClick);
@@ -41,7 +39,6 @@ imgClick.addEventListener('dblclick', event => {
 });
 
 // 5 //
-
 // Select Dom Element
 const bodyElement = document.querySelector('body');
 console.log(bodyElement);
@@ -72,7 +69,6 @@ textContentClass.forEach(paragraph => {
 });
 
 // 8 //
-
 // Select Dom Element
 const destinationClass = document.querySelectorAll('.destination');
 console.log(destinationClass);
@@ -86,7 +82,6 @@ destinationClass.forEach(card => {
 });
 
 // 9 //
-
 // mouseover
 const btmButton = document.querySelectorAll('.btn');
 btmButton.forEach(card => {
@@ -97,7 +92,6 @@ btmButton.forEach(card => {
 });
 
 // 10 //
-
 const imgRemove = document.querySelector('.img-content');
 console.log(imgClick);
 
