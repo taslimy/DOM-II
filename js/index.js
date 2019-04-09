@@ -97,7 +97,7 @@ console.log(imgClick);
 
 imgRemove.addEventListener('click', event => {
   imgRemove.style.display = 'none';
-  alert('This image will now be removed!');
+  alert('The image will now be removed!');
 });
 
 // Stop Nav!
@@ -117,13 +117,12 @@ navItems.forEach(aTag => {
 paragraphs = document.querySelectorAll('p');
 intro = document.querySelector('.intro');
 intro.addEventListener('copy', function (event) {
-  alert('This will copy the H2.');
-})
-
+  alert('This will copy the H2!');
+});
 // this will alert you when the paragraph is copied.
 paragraphs.forEach(node => {
   node.addEventListener('copy', function (event) {
     event.stopPropagation();
-    alert('para has been copied.');
-  })
-})
+    alert('You have copied the paragraph!');
+  });
+});
