@@ -54,7 +54,7 @@ console.log(textContentClass);
 // Event Listener Callback
 textContentClass.forEach(paragraph => {
   paragraph.addEventListener('mouseover', () => {
-    paragraph.style.fontFamily = 'cursive';
+    paragraph.style.fontFamily = 'sans-serif';
     paragraph.style.color = 'green';
   });
 });
